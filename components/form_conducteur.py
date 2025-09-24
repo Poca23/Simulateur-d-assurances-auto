@@ -2,7 +2,7 @@ import streamlit as st
 
 def render_form_conducteur():
     """Formulaire de saisie des informations conducteur"""
-    st.subheader("👤 Informations sur le conducteur principal")
+    st.subheader("Informations sur le conducteur principal")
     
     col1, col2 = st.columns(2)
     

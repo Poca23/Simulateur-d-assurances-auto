@@ -5,7 +5,7 @@ from components.form_conducteur import render_form_conducteur
 from utils.calcul_tarif import calculate_quote
 
 st.set_page_config(
-    page_title="Auto Simulator - Saint-Pierre Insurance",
+    page_title="Simulateur Auto - Saint-Pierre Assurances",
     page_icon="🚗",
     layout="wide"
 )
@@ -21,23 +21,23 @@ data_ready = (vehicule_data.get('marque') and
 
 if data_ready:
     st.divider()
-    if st.button("🧮 **Calculate Quote**", type="primary", use_container_width=True):
-        with st.spinner("Calculating..."):
+    if st.button("🧮 **Calculer mon devis**", type="primary", use_container_width=True):
+        with st.spinner("Calcul en cours..."):
             import time
             time.sleep(1)
             
             resultat = calculate_quote(vehicule_data, conducteur_data)
             
-            st.success("✅ **Your personalized quote**")
+            st.success("✅ **Votre devis personnalisé**")
             
             col1, col2, col3 = st.columns(3)
             with col1:
-                st.metric("💰 Annual Premium", f"{resultat['tarif_annuel']} €")
+                st.metric("💰 Tarif annuel", f"{resultat['tarif_annuel']} €")
             with col2:
-                st.metric("📅 Monthly Premium", f"{resultat['tarif_mensuel']} €/month")
+                st.metric("📅 Tarif mensuel", f"{resultat['tarif_mensuel']} €/mois")
             with col3:
-                st.metric("🎯 Savings", "Up to 30%", delta="vs competition")
+                st.metric("🎯 Économie", "Jusqu'à 30%", delta="vs concurrence")
             
-            st.info("📞 **Contact Saint-Pierre Assurances** to finalize your quote and get personalized advice!")
+            st.info("📞 **Contactez Saint-Pierre Assurances** pour finaliser votre devis et bénéficier de conseils personnalisés !")
 else:
-    st.info("ℹ️ Fill minimum information (brand, year, license experience) to calculate your quote")
+    st.info("ℹ️ Remplissez les informations minimum (marque, année, expérience permis) pour calculer votre devis")
