@@ -1,10 +1,8 @@
 def calculate_quote(vehicule_data, conducteur_data):
     """Calcul simple de tarif assurance auto"""
     
-    # Tarif de base
     tarif_base = 400
     
-    # Coefficients véhicule
     coeff_marque = {
         'Peugeot': 1.0, 'Citroën': 1.0, 'Renault': 1.0,
         'Volkswagen': 1.1, 'Toyota': 1.05,
@@ -19,7 +17,6 @@ def calculate_quote(vehicule_data, conducteur_data):
     else:
         coeff_vehicule = 0.8
     
-    # Coefficients conducteur
     age = conducteur_data.get('age', 30)
     if age < 25:
         coeff_age = 1.5
@@ -28,7 +25,6 @@ def calculate_quote(vehicule_data, conducteur_data):
     else:
         coeff_age = 1.1
     
-    # Bonus/malus simplifié
     bonus_text = conducteur_data.get('bonus_malus', '1.00')
     if '0.50' in bonus_text:
         coeff_bonus = 0.50
@@ -39,7 +35,6 @@ def calculate_quote(vehicule_data, conducteur_data):
     else:
         coeff_bonus = 1.00
     
-    # Calcul final
     marque = vehicule_data.get('marque', 'Peugeot')
     tarif_final = (tarif_base * 
                    coeff_marque.get(marque, 1.0) * 

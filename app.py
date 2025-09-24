@@ -4,45 +4,40 @@ from components.form_vehicule import render_form_vehicule
 from components.form_conducteur import render_form_conducteur
 from utils.calcul_tarif import calculate_quote
 
-# Configuration page
 st.set_page_config(
-    page_title="Simulateur Auto - Saint-Pierre Assurances",
+    page_title="Auto Simulator - Saint-Pierre Insurance",
     page_icon="🚗",
     layout="wide"
 )
 
-# Affichage header
 render_header()
 
-# Formulaires
 vehicule_data = render_form_vehicule()
 conducteur_data = render_form_conducteur()
 
-# Bouton calculer (affiché seulement si données minimum)
 data_ready = (vehicule_data.get('marque') and 
               vehicule_data.get('annee') and 
               conducteur_data.get('permis_depuis'))
 
 if data_ready:
     st.divider()
-    if st.button("🧮 **Calculer mon devis**", type="primary", use_container_width=True):
-        with st.spinner("Calcul en cours..."):
+    if st.button("🧮 **Calculate Quote**", type="primary", use_container_width=True):
+        with st.spinner("Calculating..."):
             import time
-            time.sleep(1)  # Effet visuel
+            time.sleep(1)
             
             resultat = calculate_quote(vehicule_data, conducteur_data)
             
-            # Affichage résultats
-            st.success("✅ **Votre devis personnalisé**")
+            st.success("✅ **Your personalized quote**")
             
             col1, col2, col3 = st.columns(3)
             with col1:
-                st.metric("💰 Tarif annuel", f"{resultat['tarif_annuel']} €")
+                st.metric("💰 Annual Premium", f"{resultat['tarif_annuel']} €")
             with col2:
-                st.metric("📅 Tarif mensuel", f"{resultat['tarif_mensuel']} €/mois")
+                st.metric("📅 Monthly Premium", f"{resultat['tarif_mensuel']} €/month")
             with col3:
-                st.metric("🎯 Économie", "Jusqu'à 30%", delta="vs concurrence")
+                st.metric("🎯 Savings", "Up to 30%", delta="vs competition")
             
-            st.info("📞 **Contactez Saint-Pierre Assurances** pour finaliser votre devis et bénéficier de conseils personnalisés !")
+            st.info("📞 **Contact Saint-Pierre Assurances** to finalize your quote and get personalized advice!")
 else:
-    st.info("ℹ️ Remplissez les informations minimum (marque, année, expérience permis) pour calculer votre devis")
+    st.info("ℹ️ Fill minimum information (brand, year, license experience) to calculate your quote")
