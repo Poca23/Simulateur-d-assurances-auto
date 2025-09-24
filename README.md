@@ -30,7 +30,7 @@ Application web de simulation de devis d'assurance automobile développée pour 
 
 ```bash
 # Cloner le repository
-git clone https://github.com/votre-username/simulateur_assurance.git
+git clone https://github.com/Poca23/Simulateur-d-assurances-auto.git
 cd simulateur_assurance
 
 # Créer un environnement virtuel
