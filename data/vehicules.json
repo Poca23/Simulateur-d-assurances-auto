@@ -1,0 +1,69 @@
+{
+  "PEUGEOT": {
+    "208": {"coeff_base": 0.75, "categorie": "citadine", "puissance_fiscale": [4, 5, 6]},
+    "308": {"coeff_base": 1.0, "categorie": "berline", "puissance_fiscale": [5, 6, 7, 8]},
+    "3008": {"coeff_base": 1.15, "categorie": "suv", "puissance_fiscale": [6, 7, 8, 9]},
+    "508": {"coeff_base": 1.25, "categorie": "berline", "puissance_fiscale": [7, 8, 9, 10]}
+  },
+  "RENAULT": {
+    "Clio": {"coeff_base": 0.8, "categorie": "citadine", "puissance_fiscale": [4, 5, 6]},
+    "Megane": {"coeff_base": 1.0, "categorie": "berline", "puissance_fiscale": [5, 6, 7, 8]},
+    "Captur": {"coeff_base": 1.1, "categorie": "suv", "puissance_fiscale": [5, 6, 7, 8]},
+    "Kadjar": {"coeff_base": 1.2, "categorie": "suv", "puissance_fiscale": [6, 7, 8, 9]}
+  },
+  "CITROEN": {
+    "C3": {"coeff_base": 0.8, "categorie": "citadine", "puissance_fiscale": [4, 5, 6]},
+    "C4": {"coeff_base": 0.95, "categorie": "berline", "puissance_fiscale": [5, 6, 7]},
+    "C5 Aircross": {"coeff_base": 1.2, "categorie": "suv", "puissance_fiscale": [6, 7, 8, 9]}
+  },
+  "VOLKSWAGEN": {
+    "Polo": {"coeff_base": 0.85, "categorie": "citadine", "puissance_fiscale": [4, 5, 6]},
+    "Golf": {"coeff_base": 1.05, "categorie": "berline", "puissance_fiscale": [5, 6, 7, 8, 9]},
+    "Tiguan": {"coeff_base": 1.3, "categorie": "suv", "puissance_fiscale": [6, 7, 8, 9, 10]}
+  },
+  "FORD": {
+    "Fiesta": {"coeff_base": 0.8, "categorie": "citadine", "puissance_fiscale": [4, 5, 6]},
+    "Focus": {"coeff_base": 1.0, "categorie": "berline", "puissance_fiscale": [5, 6, 7, 8]},
+    "Kuga": {"coeff_base": 1.25, "categorie": "suv", "puissance_fiscale": [6, 7, 8, 9]}
+  },
+  "OPEL": {
+    "Corsa": {"coeff_base": 0.75, "categorie": "citadine", "puissance_fiscale": [4, 5, 6]},
+    "Astra": {"coeff_base": 0.95, "categorie": "berline", "puissance_fiscale": [5, 6, 7, 8]},
+    "Crossland": {"coeff_base": 1.1, "categorie": "suv", "puissance_fiscale": [5, 6, 7, 8]}
+  },
+  "BMW": {
+    "Serie 1": {"coeff_base": 1.4, "categorie": "berline", "puissance_fiscale": [6, 7, 8, 9, 10]},
+    "Serie 3": {"coeff_base": 1.6, "categorie": "berline", "puissance_fiscale": [7, 8, 9, 10, 11]},
+    "X3": {"coeff_base": 1.8, "categorie": "suv", "puissance_fiscale": [8, 9, 10, 11, 12]}
+  },
+  "MERCEDES": {
+    "Classe A": {"coeff_base": 1.45, "categorie": "berline", "puissance_fiscale": [6, 7, 8, 9]},
+    "Classe C": {"coeff_base": 1.65, "categorie": "berline", "puissance_fiscale": [7, 8, 9, 10, 11]},
+    "GLA": {"coeff_base": 1.75, "categorie": "suv", "puissance_fiscale": [7, 8, 9, 10, 11]}
+  },
+  "AUDI": {
+    "A3": {"coeff_base": 1.35, "categorie": "berline", "puissance_fiscale": [6, 7, 8, 9]},
+    "A4": {"coeff_base": 1.55, "categorie": "berline", "puissance_fiscale": [7, 8, 9, 10, 11]},
+    "Q3": {"coeff_base": 1.7, "categorie": "suv", "puissance_fiscale": [7, 8, 9, 10, 11]}
+  },
+  "TOYOTA": {
+    "Yaris": {"coeff_base": 0.8, "categorie": "citadine", "puissance_fiscale": [4, 5, 6]},
+    "Corolla": {"coeff_base": 0.9, "categorie": "berline", "puissance_fiscale": [5, 6, 7]},
+    "C-HR": {"coeff_base": 1.15, "categorie": "suv", "puissance_fiscale": [6, 7, 8]}
+  },
+  "NISSAN": {
+    "Micra": {"coeff_base": 0.75, "categorie": "citadine", "puissance_fiscale": [4, 5, 6]},
+    "Qashqai": {"coeff_base": 1.2, "categorie": "suv", "puissance_fiscale": [6, 7, 8, 9]},
+    "X-Trail": {"coeff_base": 1.35, "categorie": "suv", "puissance_fiscale": [7, 8, 9, 10]}
+  },
+  "FIAT": {
+    "500": {"coeff_base": 0.7, "categorie": "citadine", "puissance_fiscale": [4, 5]},
+    "Panda": {"coeff_base": 0.65, "categorie": "citadine", "puissance_fiscale": [4, 5]},
+    "500X": {"coeff_base": 1.0, "categorie": "suv", "puissance_fiscale": [5, 6, 7]}
+  },
+  "DACIA": {
+    "Sandero": {"coeff_base": 0.6, "categorie": "berline", "puissance_fiscale": [4, 5, 6]},
+    "Duster": {"coeff_base": 0.85, "categorie": "suv", "puissance_fiscale": [5, 6, 7, 8]},
+    "Logan": {"coeff_base": 0.65, "categorie": "berline", "puissance_fiscale": [4, 5, 6]}
+  }
+}
