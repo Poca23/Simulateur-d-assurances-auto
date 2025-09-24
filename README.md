@@ -2,7 +2,7 @@
 
 ## Description
 
-Application web de simulation de devis d'assurance automobile développée pour Saint-Pierre Assurances. Cette solution permet aux clients de générer rapidement des estimations tarifaires personnalisées et de comparer différentes formules d'assurance.
+Application web de simulation de devis d'assurance automobile. Cette solution permet aux clients de générer rapidement des estimations tarifaires personnalisées et de comparer différentes formules d'assurance.
 
 ## Fonctionnalités
 
@@ -100,7 +100,7 @@ Pour toute question technique ou demande d'évolution, contacter l'équipe de d�
 
 ## Licence
 
-Projet propriétaire - Saint-Pierre Assurances
+Proprietary software
 
 ---
 
